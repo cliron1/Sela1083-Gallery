@@ -1,0 +1,18 @@
+﻿@model IEnumerable<string>
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<form method="post" class="d-flex gap-2 mb-4" enctype="multipart/form-data">
+	<input type="file" name="file" class="form-control" />
+	<button class="btn btn-primary">Submit</button>
+</form>
+
+<div class="d-flex gap-2">
+	@foreach(var img in Model) {
+		<div class="p-1" style=" border:1px solid #000;">
+			<img src="@($"https://sela1083liron.blob.core.windows.net/images/{img}")"
+				 style="height: 120px;" />
+		</div>
+	}
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleyApp", "GalleyApp\GalleyApp.csproj", "{08E11585-8D9C-4807-85C3-A823048A656E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08E11585-8D9C-4807-85C3-A823048A656E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E11585-8D9C-4807-85C3-A823048A656E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E11585-8D9C-4807-85C3-A823048A656E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E11585-8D9C-4807-85C3-A823048A656E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B01E061-3CD0-49E2-BB4B-02D600B867F3}
+	EndGlobalSection
+EndGlobal
