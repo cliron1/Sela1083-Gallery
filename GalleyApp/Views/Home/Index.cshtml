@@ -9,10 +9,9 @@
 </form>
 
 <div class="d-flex gap-2">
-	@foreach(var img in Model) {
+	@foreach(var imgUrl in Model) {
 		<div class="p-1" style=" border:1px solid #000;">
-			<img src="@($"https://sela1083liron.blob.core.windows.net/images/{img}")"
-				 style="height: 120px;" />
+			<img src="@imgUrl" style="height: 120px;" />
 		</div>
 	}
 </div>

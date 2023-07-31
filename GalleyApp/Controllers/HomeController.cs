@@ -17,14 +17,17 @@ public class HomeController : Controller {
 		var connectionString = config.GetConnectionString("Storage");
 
 		var client = new BlobServiceClient(connectionString);
-		container = client.GetBlobContainerClient("images");
+		container = client.GetBlobContainerClient("pics");
 		container.CreateIfNotExists();
+        container.SetAccessPolicy(PublicAccessType.Blob);
 	}
 
     public async Task<IActionResult> Index() {
         var model = new List<string>();
         await foreach(BlobItem blobItem in container.GetBlobsAsync()) {
-            model.Add(blobItem.Name);
+            BlobClient blob = container.GetBlobClient(blobItem.Name);
+
+			model.Add(blob.Uri.ToString());
         }
         return View(model);
     }
